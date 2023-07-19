@@ -1,9 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
   theme: {
-    extend: {},
+    extend: {
+    fontFamily: {
+      rrr: ['Rubik', 'sans-serif'],
+    },
   },
-  plugins: [],
-}
+    screens: {
+      l: { max: '1400px' },
+      // => @media (max-width: 1400px) { ... }
 
+      s: { max: '330px' },
+      // => @media (max-width: 330px) { ... }
+    },
+  },
+};
